@@ -1,0 +1,10 @@
+<h1>Services</h1>
+<p>A simple angular service implementation, which make a simple get request
+   to https://swapi.co to get Star Wars movies and print on screen:</p>
+<br>
+<p *ngIf="movies == null">Loading...</p>
+<p *ngFor="let movie of movies" class="block">
+  Movie Name: {{movie.title}}<br>
+  Movie Director: {{movie.director}}<br>
+  Release Date: {{movie.release_date}}
+</p>

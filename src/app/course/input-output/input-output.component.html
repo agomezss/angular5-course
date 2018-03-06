@@ -1,0 +1,14 @@
+<h1>Input And Output</h1>
+<p>Here we have a component that will comunicate with another and send and receive values!</p>
+<br>
+<p>Enter the Input the value you want to send to component:</p><br>
+<input type="text" [(ngModel)]="sendValue"><br>
+
+<br>
+<app-external-block [receivedValue]="sendValue" (onReceive)="receive($event)">
+    
+</app-external-block>
+<br>
+
+
+<p>The Value received by external component is <b>{{receivedValue}}</b></p>

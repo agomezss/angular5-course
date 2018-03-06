@@ -1,0 +1,8 @@
+<p>
+  This is an external Block whick will receive value and Send value!
+</p>
+<p>The received value is: <b>{{receivedValue}}</b></p>
+<br>
+<p>Fill the Input and Click the button bellow to send a value:</p><br>
+<input type="text" [(ngModel)]="inputValue">
+<button (click)="sendValue()">Send Value!</button>

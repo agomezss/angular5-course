@@ -1,0 +1,18 @@
+<h1>Ng Directives!</h1>
+<br>
+<p><b>NgIf</b>: Determines if an element will be rendered or not</p>
+<br>
+<h3 *ngIf="viewSecretText">You are only seeing this because there is a variable letting you ;D</h3>
+<br>
+<p><b>NgFor</b>: Let you iterate through an array and perform some template or function operations, 
+    I will use it to render a Jedi List!</p>
+<br>
+<p *ngFor="let jedi of jediList; let i = index">{{i}} - {{jedi}}</p>
+<br>
+<p>NgModel: Let you link an html direct to an variable, if you change the html, the variable change, 
+    if you change the variable, you will see the result instantly ;D</p>
+<br>
+<p>Enter Your Jedi:</p>
+<input type="text" [(ngModel)]="yourJedi">
+<br>
+<p>You choosed: <b>{{yourJedi}}</b></p> 
